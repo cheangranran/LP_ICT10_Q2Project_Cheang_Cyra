@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <title> Quarter 2 Seatwork 1 - Social Science Club </title>
+
+    
+<style>
+
+    @font-face {
+  font-family: 'Aquifer';
+  src: url('aquifer.ttf'); 
+}
+
+@font-face {
+  font-family: 'Romance Delighter';
+  src: url('Romance\ Delighter.ttf'); 
+}
+
+
+  body {
+    margin: 0;
+    background-color: #17233F;
+    font-family: Georgia, serif;}
+    
+header {
+    background-image:  linear-gradient(
+            rgba(16, 29, 80, 0.65),
+            rgba(0, 2, 10, 0.75)
+        ), url("banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: rgb(241, 234, 234);
+    text-align: center;
+    padding: 65px 20px;
+    border-bottom: 5px linear-gradient(
+            rgba(16, 29, 80, 0.65),
+            rgba(0, 2, 10, 0.75)
+        );
+    text-shadow: 2px 2px 5px black;}
+
+  header h1 {
+    font-size: 38px;
+    margin: 15px 0 10px;
+    letter-spacing: 1px;}
+
+  header p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0 auto;
+    }
+
+    main {
+        background-color: rgb(238, 235, 235);
+        width: 80%;
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 30px;
+        text-align: center;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px #0b0700; }
+
+   main h2 {
+    color: #101D50;
+    margin-top: 0;
+    font-size: 24px; }
+
+    
+    #first_name, #last_name {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #C5AC94;
+        border-radius: 6px;
+        font-size: 15px;
+        box-sizing: border-box;
+        background-color: #F8F5EE;
+        color: #101D50;}
+
+    #first_name:focus, #last_name:focus {
+        outline: none;
+        border: 2px solid #101D50;}
+
+    #enter_button {
+        background-color: #101D50;
+        color: white;
+        padding: 12px 30px;
+        margin-top: 15px;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;}
+
+    #enter_button:hover {
+        background-color: #101D50;}
+
+
+    #result {
+        color: #101D50;
+        margin-top: 20px;
+        font-weight: bold;}
+
+    
+  footer {
+    background-color: #17233F;
+    color: #D8D2C5;
+    text-align: center;
+    padding: 20px;
+    border-top: 4px solid #B69A73;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;}
+
+    footer p {
+    margin: 7px;}
+
+    .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+  background-color: #162138;
+}
+
+.nav-link {
+  font-family: 'Aquifer', serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.nav-center {
+  font-family: 'Romance Delighter', cursive;
+  font-size: 48px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+</style>
+
+</head>
+<body>
+<nav class="navbar">
+  <a href="element-checker.html" class="nav-link">ELEMENT CHECKER</a>
+
+  <a href="index.html" class="nav-center">portfolio</a>
+
+  <div class="nav-right">
+    <a href="index.html#about" class="nav-link">ABOUT ME</a>
+    <a href="club-members.html" class="nav-link">CLUB CHECKER</a>
+  </div>
+</nav>
+
+  <header> 
+    <div class="reactor"></div>
+    <h1> Social Science Club</h1>
+    <p> Exploring politics, society, and the world around us.</p>
+  </header>
+
+  <main> 
+    <h2>Welcome to Social Sciences! </h2>
+    <p>Check your Social Science Club membership below.</p>
+    <form> 
+        <input type="text" id="first_name" placeholder="Enter your First Name"> 
+        <br> 
+        <input type="text" id="last_name" placeholder="Enter your Last Name"> 
+        <br> 
+        <input type="button" id="enter_button" py-click="candidate_checker" value="Enter">
+    </form>
+
+    <div id="result"></div>
+  </main>
+
+  <footer>
+    <p>SOCIAL SCIENCE CLUB</p>
+    <p>Politics · Society · Global Affairs</p>
+  </footer>
+
+<py-script src="main.py"></py-script> 
+</body>
+</html>

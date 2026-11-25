@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <title>Non-Metal Elements</title>
+
+    <style>
+
+        @font-face {
+        font-family: 'Aquifer';
+         src: url('aquifer.ttf'); 
+         }
+
+    @font-face {
+         font-family: 'Romance Delighter';
+         src: url('Romance\ Delighter.ttf'); 
+    }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #162138;
+            padding: 20px;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            border: 10px solid #8194a3;
+            background-color: white;
+        }
+
+        .header {
+            background-color: #7E99B3;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .instructions {
+            background-color: lightblue;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 95%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #46607F;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #22334F;
+        }
+
+        #result {
+            background-color: #f1f1f1;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+         .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+  background-color: #162138;
+}
+
+.nav-link {
+  font-family: 'Aquifer', serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.nav-center {
+  font-family: 'Romance Delighter', cursive;
+  font-size: 48px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+    </style>
+</head>
+
+<body>
+
+ <nav class="navbar">
+  <a href="element-checker.html" class="nav-link">ELEMENT CHECKER</a>
+
+  <a href="index.html" class="nav-center">portfolio</a>
+
+  <div class="nav-right">
+    <a href="index.html#about" class="nav-link">ABOUT ME</a>
+    <a href="club-members.html" class="nav-link">CLUB CHECKER</a>
+  </div>
+</nav>
+
+
+<div class="container">
+
+    <div class="header">
+        <h1>Non-Metal Elements</h1>
+        <p>Periodic Table Information Finder</p>
+    </div>
+
+    <div class="content">
+
+        <div class="instructions">
+            <b>Instructions:</b><br>
+            Enter the symbol of a non-metal element.
+            (Example: H, O, Cl, Ne, Xe)
+        </div>
+
+        <label><b>Element Symbol:</b></label>
+
+        <input type="text" id="symbol" placeholder="Enter element symbol">
+
+        <button py-click="search_element">Check Details</button>
+
+        <div id="result">
+            <b>Result:</b><br>
+            Element information will appear here.
+        </div>
+
+    </div>
+
+</div>
+
+<py-script src="elementchecker.py"></py-script>
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+
+@font-face {
+  font-family: 'Aquifer';
+  src: url('aquifer.ttf'); 
+}
+
+@font-face {
+  font-family: 'Romance Delighter';
+  src: url('Romance\ Delighter.ttf'); 
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #162138;
+  color: #ffffff;
+  font-family: 'Aquifer', serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.nav-center {
+  font-family: 'Romance Delighter', cursive;
+  font-size: 36px;
+  text-decoration: underline;
+}
+
+.nav-right {
+  display: flex;
+  gap: 35px;
+}
+
+.navbar .nav-center {
+  font-family: 'Romance Delighter', cursive;
+  font-size: 40px;
+  text-underline-offset: 6px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px 80px;
+  gap: 30px;
+  position: relative;
+  
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 0;
+  margin-top: 140px;
+}
+
+.script-name {
+ font-family: 'Romance Delighter', cursive;
+  font-size: 168px;         
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: -15px;    
+  position: relative;
+  z-index: 2;
+}
+
+.big-title {
+  font-family: 'Aquifer', serif;
+  font-size: 168px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.o-flower {
+  position: relative;
+  display: inline-block;
+}
+
+.o-flower img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200%; 
+  height: auto;
+  pointer-events: none;
+}
+
+.est-year {
+  font-family: 'Romance Delighter', cursive;
+  font-size: 28px;
+  text-align: center;
+  margin-top: -30px; 
+}
+
+.hero-right {
+  position: relative;
+  width: 440px;
+  height: 460px;
+}
+
+.strip {
+  position: absolute;
+  height: auto;
+}
+
+.strip-1 {
+  width: 155px;
+  left: 120px;
+  top: 65px;
+  transform: rotate(-6deg);
+  z-index: 2;
+}
+
+.strip-2 {
+  width: 225px;
+  right: -25px;
+  top: 10px;
+  transform: rotate(6deg);
+  z-index: 1;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  gap: 50px;
+}
+
+.about-left {
+  position: relative;
+  width: 48%;
+  flex-shrink: 0;
+}
+
+.photobooth-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-flower {
+  width: 110px;
+  height: auto;
+  position: absolute;
+  bottom: -25px;
+  left: -25px;
+}
+
+.about-right {
+  width: 52%;
+}
+
+.section-heading {
+  font-family: 'Romance Delighter', cursive;
+  font-size: 60px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.about-right p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.works {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.underlined {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.poster-row {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin: 40px 0;
+}
+
+.poster-row img {
+  width: 30%;
+  max-width: 320px;
+  height: auto;
+}
+
+.works-label {
+  font-family: 'Aquifer', serif;
+  font-size: 42px;
+  letter-spacing: 3px;
+  font-weight: normal;
+}
+
+.qtr-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 70px;
+  gap: 40px;
+}
+
+.qtr-left {
+  width: 35%;
+}
+
+.qtr-heading {
+  font-family: 'Aquifer', serif;
+  font-size: 72px;
+  font-weight: normal;
+  line-height: 1.25;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.qtr-right {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.qtr-item {
+  width: 100%;
+  text-align: center;
+}
+
+.qtr-thumb {
+  display: block;
+  width: 460px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 12px auto;
+  border: 2px solid #cbd5e1;
+}
+
+.qtr-label {
+  display: inline-block;
+  font-family: 'Aquifer', serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
